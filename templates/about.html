@@ -3,16 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Website - About</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/app.css') }}"
+    />
   </head>
   <body>
-    <h1>Javian Saunders</h1>
-    <p>
-      I see myself as someone who aspires to achieve dreams that are neither
-      excessively grand nor overly modest, but instead, they strike a harmonious
-      balance between ambition and realism. My interest in web development, like
-      many others, marked my starting point into the world of programming. The
-      process of assembling various elements and witnessing them come together
-      into a webpage both captivated and intrigued me from the outset.
-    </p>
+    <div class="header">
+      <h1>Javian Saunders</h1>
+    </div>
+    <div class="container">
+      <div class="content">
+        <p>
+          I see myself as someone who aspires to achieve dreams that are neither
+          excessively grand nor overly modest, but instead, they strike a
+          harmonious balance between ambition and realism. My interest in web
+          development, like many others, marked my starting point into the world
+          of programming. The process of assembling various elements and
+          witnessing them come together into a webpage both captivated and
+          intrigued me from the outset.
+        </p>
+        <div class="image-container">
+          <img
+            src="{{ url_for('static', filename='giphy.gif')}}"
+            alt="python Logo"
+          />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2025 Javian Saunders.</p>
+    </footer>
   </body>
 </html>
